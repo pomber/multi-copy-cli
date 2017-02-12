@@ -1,6 +1,6 @@
 {
   "name": "multi-copy-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Copy files from several sources to several destinations",
   "scripts": {
     "test": "xo"
