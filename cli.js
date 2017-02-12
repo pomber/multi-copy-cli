@@ -3,6 +3,7 @@
 const fs = require('fs');
 const meow = require('meow');
 const multicopy = require('multi-copy');
+const tree = require('nodetree');
 
 const usage = `
 	Usage
@@ -19,8 +20,11 @@ fs.readFile(configpath, (err, data) => {
 		throw err;
 	}
 	const config = JSON.parse(data);
-	multicopy(config).catch(err => {
-		throw err;
-	});
+	multicopy(config)
+		.then(dest => {
+			console.log(tree(dest));
+		}).catch(err => {
+			throw err;
+		});
 });
 

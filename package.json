@@ -33,7 +33,8 @@
   "homepage": "https://github.com/pomber/multi-copy-cli#readme",
   "dependencies": {
     "meow": "^3.7.0",
-    "multi-copy": "^0.0.1"
+    "multi-copy": "^0.0.1",
+    "nodetree": "^0.0.3"
   },
   "devDependencies": {
     "xo": "^0.17.1"
