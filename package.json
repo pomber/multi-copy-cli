@@ -2,13 +2,18 @@
   "name": "multi-copy-cli",
   "version": "0.0.1",
   "description": "Copy files from several sources to several destinations",
-  "main": "index.js",
   "scripts": {
     "test": "xo"
   },
   "engines": {
     "node": ">=6"
   },
+  "bin": {
+    "mucopy": "cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pomber/multi-copy-cli.git"
@@ -25,5 +30,12 @@
   "bugs": {
     "url": "https://github.com/pomber/multi-copy-cli/issues"
   },
-  "homepage": "https://github.com/pomber/multi-copy-cli#readme"
+  "homepage": "https://github.com/pomber/multi-copy-cli#readme",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "multi-copy": "^0.0.1"
+  },
+  "devDependencies": {
+    "xo": "^0.17.1"
+  }
 }
